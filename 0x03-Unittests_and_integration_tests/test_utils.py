@@ -55,6 +55,7 @@ class TestGetJson(unittest.TestCase):
             test_url: str,
             test_payload: Dict,
             ) -> None:
+        
         """Tests `get_json`'s output."""
         attrs = {'json.return_value': test_payload}
         with patch("requests.get", return_value=Mock(**attrs)) as req_get:
