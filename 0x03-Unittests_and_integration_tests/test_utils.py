@@ -4,7 +4,7 @@
 import unittest
 from unittest.mock import patch, Mock
 from typing import Dict, Tuple, Union
-import parameterized
+from parameterized import parameterized
 
 from utils import (
     get_json,
